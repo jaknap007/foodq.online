@@ -13,16 +13,20 @@
     :root {
       --bg:        #0f0b08;
       --surface:   #1a1209;
-      --cream:     #f5ead8;
+      --cream:     #ffffff;
       --amber:     #e8a44a;
       --rust:      #c0522a;
-      --muted:     #7a6a58;
+      --muted:     #ffffff;
       --border:    rgba(232,164,74,0.18);
     }
 
     html, body {
       height: 100%;
-      background: var(--bg);
+      background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
       color: var(--cream);
       font-family: 'Outfit', sans-serif;
       font-weight: 300;
